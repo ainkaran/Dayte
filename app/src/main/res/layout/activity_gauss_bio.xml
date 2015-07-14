@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#ffffffff"
+                android:layout_margin="0dp"
+                tools:context="Dayte.GaussBio">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#649175"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+            <ImageButton
+                android:id="@+id/backToMain"
+                android:layout_width="68.5dp"
+                android:layout_height="80dp"
+                android:onClick="switchToGaussBio"
+                android:focusable="true"
+                android:background="@drawable/pictureofgauss"
+                android:layout_gravity="center_vertical"
+
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="6dp"/>
+            <TextView
+                android:id="@+id/inventorTextViewButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Who was Carl Gauss?"
+                android:textSize="30dp"
+                android:padding="0dp"
+                android:layout_marginLeft="2dp"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                />
+        </LinearLayout>
+        </LinearLayout>
+
+    <ScrollView
+        android:paddingBottom="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/scrollView"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bio"
+                android:textColor="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars = "vertical"
+                android:text="@string/bioString"
+                android:textSize="20sp"
+                android:layout_margin="0dp"/>
+
+            <!--
+
+            <TextView
+                android:id="@+id/link"
+                android:elevation="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textSize="20sp"
+                android:textColor="#0645AD"
+                />
+
+                -->
+
+            <!--android:text="@string/linkToGaussPage"-->
+
+<!--            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="THIS SHOULD BE IN THE LINEAR LAYOUT"/> -->
+
+
+            </LinearLayout>
+
+    </ScrollView>
+
+<!--
+    <TextView
+        android:id="@+id/link"
+        android:elevation="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/linkToGaussPage"
+        android:textSize="20sp"
+        android:textColor="#0645AD"
+        />
+-->
+
+</LinearLayout>
